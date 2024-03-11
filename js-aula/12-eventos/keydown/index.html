@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- um form simples para contar os caracteres -->
+    <label for="text">Digite algo</label>
+    <input type="text" id="texto">
+    <p>Contagem de caracteres <span id="contador">0</span></p>
+
+    <script>
+        //Selecionar o campo de entrada 
+        const campoTexto = document.getElementById
+
+        //selecionar o elemento para exibir a contagem de caracteres
+        const contador = document.getElementById('conatdor')
+
+        //Adicionar um ouvinte de teclado ao campo de entrada
+        campoTexto.addEventListener('keydown', function (){
+            contador.textContent = campoTexto.value.lenght
+        })
+    </script>
+</body>
+</html>

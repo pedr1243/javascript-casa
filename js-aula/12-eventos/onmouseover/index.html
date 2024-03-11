@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Onmouseover</title>
+</head>
+<body>
+    <h1>HTML DOC EVENT</h1>
+    <h2>Evento Onmouseover</h2>
+    <h3>Faz um evento ao passar o mouse sobre "algo"</h3>
+
+    <img onmouseover="ImgGrande(this)" onmouseout="ImgPequeno(this)"
+    src="icons8-javascript-64.png" alt="Smiley" width="70" height="70">
+
+
+    <script>
+        //Criar duas funções para que o evento aconteça 
+        function ImgGrande(img) {
+            img.style.heigth = "120px";
+            img.style.width = "120px";
+            img.style.cursor = "pointer";
+
+        }
+        function ImgPequeno(img) {
+            img.style.heigth = "100px";
+            img.style.width = "100px"
+            
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 70px;
+            height: 70px;
+            padding: 70px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Evento para mudar o bg de uma div ou das class -->
+    <div class="box" onclick="mudarCor(this, 'red')">clique</div>
+    <div class="box" onclick="mudarCor(this, 'blue')">clique</div>
+    <div class="box" onclick="mudarCor(this, 'green')">clique</div>
+
+
+
+
+    <script>
+        // criamos uma função para mudar a cor da dv ao clicar
+        function mudarCor(elemento, color ) {
+            //Alterar a cor de fundo do elemento clicado
+            elemento.style.backgroundColor = color;
+        }
+    </script>
+    
+</body>
+</html>
